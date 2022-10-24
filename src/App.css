@@ -1,0 +1,174 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 16px;
+  color: #f2f2f2;
+}
+
+.App {
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+.App__container {
+  max-width: 500px;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+/*   HEADER    */
+
+.Header {
+  padding: 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.Header__title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 375px) {
+  .Header {
+    padding: 2rem;
+  }
+}
+
+
+/*   SEARCH    */
+
+.Search {
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.Search__label,
+.Search__button,
+.Search__input {
+  border: none;
+  outline: none;
+  font-size: 0.9rem;
+  background-color: transparent;
+  color: #fff;
+  font-weight: 500;
+}
+
+.Search__label {
+  border: 1px solid #f2f2f2;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  width: 75%;
+  position: relative;
+}
+
+.Search__input {
+  width: 100%;
+  padding: 0.75rem 0rem 0.75rem 1.75rem;
+  font-weight: 700;
+}
+
+.Search__input::placeholder {
+  color: #f2f2f2;
+  opacity: 0.85;
+}
+
+.Search__button {
+  padding: 0.75rem;
+  font-weight: 700;
+  background-color: #f37928;
+  border: 1px solid #f37928;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  width: 25%;
+  cursor: pointer;
+}
+
+
+/*    LOADER    */
+
+.Loader {
+  margin: 5rem auto;
+  border: 8px solid #f2f2f2;
+  border-top: 8px solid #f37928;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+/*    CURRENT WEATHER    */
+
+.Weather {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.Weather__icon {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.Weather__list {
+  font-size: 1rem;
+  list-style: none;
+  text-align: center;
+}
+
+.list__temperature {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.list__temperature-symbol {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.other-info__city {
+  font-size: 1.15rem;
+  margin-bottom: 1rem;
+}
+
+.other-info__clouds {
+  font-weight: normal;
+  font-size: 0.9rem;
+}
+
+.Weather {
+  padding: 0 0 1.5rem 0;
+}
+
+
+
+
+
