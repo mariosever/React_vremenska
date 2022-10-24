@@ -5,7 +5,7 @@ async function getAddressOfCoordinates(lat, lng) {
     "https://api.opencagedata.com/geocode/v1/json? ",
     {
       params: {
-        key: "e2fab8c66d544337ab683010f85d4dc7",
+        key: "", // ubaci svoj ključ sa opencagedata.com
         q: `${lat}+${lng}`,
         language: "en"
       }
