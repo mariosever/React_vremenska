@@ -8,7 +8,7 @@ async function getWeatherAndForecast(coordinates) {
         lat: coordinates.lat,
         lon: coordinates.lng,
         exclude: "minutely,hourly,alerts",
-        appid: "a584720c43c130d020ae58d96440565e",
+        appid: "", // ubaci svoj ključ sa api.openweathermap.org
         units: "metric"
       }
     }
